@@ -57,24 +57,6 @@ npm install
 npm run dev
 ```
 
-## 效果演示
-
-### 登陆
-
-![Login](http://moohng.oss-cn-shenzhen.aliyuncs.com/wchat/login.gif)
-
-### 注销
-
-![Logout](http://moohng.oss-cn-shenzhen.aliyuncs.com/wchat/logout.gif)
-
-### 聊天
-
-![Chat](http://moohng.oss-cn-shenzhen.aliyuncs.com/wchat/chatroom.gif)
-
-### 添加好友
-
-![add friend](http://moohng.oss-cn-shenzhen.aliyuncs.com/wchat/add-friend.gif)
-
 ## 功能说明
 
 该项目已实现后端服务器的支持，具有真实的聊天功能。后端部分请转移[这里](https://github.com/moohng/wchat-sv)
