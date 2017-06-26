@@ -24,23 +24,23 @@
 ### Preview
 ![pixel-web-one](./screenshots/pre1.png)
 
-## 在线预览
+### 下载apk
 
-[点击这里下载安装apk](./screenshots/android-armv7-debug.apk)，建议使用谷歌浏览器，并开启手机调试模式（由于项目仍在开发中，部分功能可能不是最新、或暂不可用）。
+[点击这里下载安装apk](./screenshots/android-armv7-debug.apk)，目前只支持android（5.0以上）系统（由于项目仍在开发中，部分功能可能不是最新、或暂不可用）。
 
 新用户必须通过注册账号进入，已注册用户可直接登录进入。目前占不支持离线消息，也不支持添加离线用户为好友（即时通信相关功能必须保证对方在线）
 
-## 本地使用
+### 本地使用
 
 假设你已安装 `Node.js`，那么直接克隆仓库到本地，安装完所有插件并启动服务器。
 建议使用谷歌浏览器并在手机调试模式下查看(http://localhost:8808/)。
 
 ``` bash
 # clone
-git clone https://github.com/moohng/wchat-vue.git
+git clone https://github.com/GGwujun/Dsx_wechat.git
 
 # 进入到目录 安装所有依赖包 国内建议使用cnpm
-cd wchat-vue
+cd Dsx_wechat
 npm install
 
 # 开启本地服务器 监听8808端口
@@ -48,15 +48,15 @@ npm run dev
 ```
 
 ### Tips
-* 无法访问此网站是因为需要在微博开放平台注册应用，我填的回调地址是我本机的ip的原因
-* 在线 Server 地址 [https://pixel-api.herokuapp.com/](https://pixel-api.herokuapp.com/)
+* 无法注册或者获取数据，因为我配置的后台接口是我的服务器，你可以自己下载后台代码，部署到自己服务器，不过一般情况是可以访问的。
+* 如果你要自己搭建服务器，你除了要安装node相关的依赖外，你还需要安装MongoDB数据库
 
 
-## function
+### function
 
-该项目已实现后端服务器的支持，具有真实的聊天功能。后端部分请转移[这里](https://github.com/moohng/wchat-sv)
+该项目已实现后端服务器的支持，具有真实的聊天功能。后端部分请转移[这里](https://github.com/GGwujun/chatserve)
 
-- 高仿iOS端的界面设计风格，具有push、pop、modal、dismiss等转场动画；
+- 高仿微信客户端的界面设计风格，具有push、pop、modal、dismiss等转场动画；
 - 注册、登陆和注销功能，可记住登录状态，避免多次登录；
 - 聊天室功能，所有在线用户可进行群聊；
 - 添加好友，目前必须保证对方在线才能正确添加；
