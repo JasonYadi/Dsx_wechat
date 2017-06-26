@@ -31,8 +31,6 @@
 
 ### Preview
 ![pixel-web-one](./screenshots/pre1.png)
-![pixel-web-two](./screenshots/Screenshot_2.png)
-![pixel-web-three](./screenshots/Screenshot_3.png)
 
 ## 在线预览
 
