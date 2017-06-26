@@ -19,7 +19,9 @@
 * 在线 Server 地址 [https://pixel-api.herokuapp.com/](https://pixel-api.herokuapp.com/)
 
 ### Intro
-* 我是一个前端小白，突发奇想自学 Vue ，前前后后写了一个月时间
+* 学习vue有段时间了，但是公司并不使用vue，为了联系vue大大小小做过几个个人项目，模仿过微信的pc版，由于sockit.io不能刷新，导致在pc端体验并不好，一刷新就要重新登陆才可以发消息给好友。
+* 在公司用的多的就是ionic，一个专注于移动端webapp的偏UI框架，里面也用到了angularjs框架。打包用的是cordova，后面就想到了用vue做一个微信客户端，用cordova打包。
+* 目前手机的硬件已经很好了，基本cordova打包的app体验还是很流畅的，配合vue的单页面应用基本可以无差原生app了。
 * 使用 vue-cli 构建、打包, 配合 vue全家桶（vue、vuex、vue-router）进行编码
 * 使用 axios 进行资源请求
 * 使用 Node.js 对 api 进行二次封装解决跨域问题
