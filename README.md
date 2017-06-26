@@ -1,4 +1,4 @@
-# Dsx_wechat By Vue 2.0
+# Dsx_wechat
 
 * 这是一个 Vue 仿微信客户端
 * Github项目地址：[https://github.com/Werb/Pixel-Web](https://github.com/Werb/Pixel-Web)
@@ -30,7 +30,7 @@
 * Github项目地址：[https://github.com/Werb/Pixel-Api](https://github.com/Werb/Pixel-Api)
 
 ### Preview
-![pixel-web-one](./screenshots/Screenshot_1.png)
+![pixel-web-one](./screenshots/pre1.png)
 ![pixel-web-two](./screenshots/Screenshot_2.png)
 ![pixel-web-three](./screenshots/Screenshot_3.png)
 
