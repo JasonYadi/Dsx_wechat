@@ -1,42 +1,32 @@
 # Dsx_wechat
 
 * 这是一个 Vue 仿微信客户端
-* Github项目地址：[https://github.com/Werb/Pixel-Web](https://github.com/Werb/Pixel-Web)
-* 一款模仿微信的 Web App，具有真实的聊天等功能，并采用前后端分离的方式来实现。前端基于 Vue 2.0 框架，[后端](https://github.com/moohng/wchat-sv)基于 Node.js + Express + MongoDB，聊天功能和添加好友功能通过 Websocket 实现。
+* Github项目地址：[https://github.com/GGwujun/Dsx_wechat](https://github.com/GGwujun/Dsx_wechat)
+* 一款模仿微信的 Web App，具有真实的聊天等功能，并采用前后端分离的方式来实现。前端基于 Vue 2.0 框架，[后端](https://github.com/GGwujun/chatserve)基于 Node.js + Express + MongoDB，聊天功能和添加好友功能通过 Websocket 实现。
 * 欢迎关注我的公众号：![pixel-web-one](./screenshots/qrcode.jpg)
+* 前端技术栈: vue 2.0、vue-cli、vuex、vue-router、webpack 2.x、pug、sass、babel等；
+* 后端技术栈：Node.js、Express、express-session、WebSocket(ws)、MongoDB、mongoose、ES6等。
 
-> 前端技术栈: vue 2.0、vue-cli、vuex、vue-router、webpack 2.x、pug、sass、babel等；
-
-> 后端技术栈：Node.js、Express、express-session、WebSocket(ws)、MongoDB、mongoose、ES6等。
-
-### Tips
-* 无法访问此网站是因为需要在微博开放平台注册应用，我填的回调地址是我本机的ip的原因
-* 所以你需要先去微博注册一个应用
-* 注册我选择的是 微连接 - 网页应用 
-* 创建成功后保存 App Key 和 App Secret
-* 然后在控制台-应用信息-高级信息设置 OAuth2.0 授权回调页，用于我们在登录后回调到我们的网页中，即[api-config.js](./src/api/config/api-config.js)所配置的内容
-* [Pixel-Api](https://github.com/Werb/Pixel-Api) 服务器我已经部署到了 Heroku
-* 在线 Server 地址 [https://pixel-api.herokuapp.com/](https://pixel-api.herokuapp.com/)
 
 ### Intro
-* 学习vue有段时间了，但是公司并不使用vue，为了联系vue大大小小做过几个个人项目，模仿过微信的pc版，由于sockit.io不能刷新，导致在pc端体验并不好，一刷新就要重新登陆才可以发消息给好友。
+* 学习vue有段时间了，但是公司并不使用vue，为了练习vue大大小小也做过几个个人项目，模仿过微信的pc版，由于sockit.io不能刷新，导致在pc端体验并不好，一刷新就要重新登陆才可以发消息给好友。
 * 在公司用的多的就是ionic，一个专注于移动端webapp的偏UI框架，里面也用到了angularjs框架。打包用的是cordova，后面就想到了用vue做一个微信客户端，用cordova打包。
 * 目前手机的硬件已经很好了，基本cordova打包的app体验还是很流畅的，配合vue的单页面应用基本可以无差原生app了。
-* 使用 vue-cli 构建、打包, 配合 vue全家桶（vue、vuex、vue-router）进行编码
+* 前端部分使用 vue-cli 构建、打包, 配合 vue全家桶（vue、vuex、vue-router）进行编码
 * 使用 axios 进行资源请求
-* 使用 Node.js 对 api 进行二次封装解决跨域问题
+* 后台使用 Node.js的express架构开发，目前接口不多，不过会持续更新。
 
 ### Server
 * 使用 Nodejs + Express 开发
-* 实现 Oauth登录，查看最新微博，查看单条微博评论，个人主页，我的关注，我的粉丝，发微博以及四种消息（@我的微博，@我的评论，收到的评论，发出的评论）
-* Github项目地址：[https://github.com/Werb/Pixel-Api](https://github.com/Werb/Pixel-Api)
+* 实现 注册，登录，退出登录，查看好友，个人主页，添加好友，一对一聊天和群聊
+* Github项目地址：[https://github.com/GGwujun/chatserve](https://github.com/GGwujun/chatserve)
 
 ### Preview
 ![pixel-web-one](./screenshots/pre1.png)
 
 ## 在线预览
 
-[点击这里在线查看效果](http://mohng.com/wchat-vue)，建议使用谷歌浏览器，并开启手机调试模式（由于项目仍在开发中，部分功能可能不是最新、或暂不可用）。
+[点击这里下载安装apk](./screenshots/android-armv7-debug.apk)，建议使用谷歌浏览器，并开启手机调试模式（由于项目仍在开发中，部分功能可能不是最新、或暂不可用）。
 
 新用户必须通过注册账号进入，已注册用户可直接登录进入。目前占不支持离线消息，也不支持添加离线用户为好友（即时通信相关功能必须保证对方在线）
 
@@ -57,7 +47,12 @@ npm install
 npm run dev
 ```
 
-## 功能说明
+### Tips
+* 无法访问此网站是因为需要在微博开放平台注册应用，我填的回调地址是我本机的ip的原因
+* 在线 Server 地址 [https://pixel-api.herokuapp.com/](https://pixel-api.herokuapp.com/)
+
+
+## function
 
 该项目已实现后端服务器的支持，具有真实的聊天功能。后端部分请转移[这里](https://github.com/moohng/wchat-sv)
 
