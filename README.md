@@ -67,6 +67,3 @@ npm run dev
 
 
 如果您觉得该项目不错, 欢迎**star**和分享！
-
-### LICENSE
-[Apache License](./LICENSE)
